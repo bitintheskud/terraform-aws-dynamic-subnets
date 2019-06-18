@@ -1,3 +1,9 @@
+variable "aws_region" {
+  default     = "us_east_1"
+  description = "AWS region"
+  type        = "string"
+}
+
 variable "subnet_type_tag_key" {
   default     = "cpco.io/subnet/type"
   description = "Key for subnet type tag to provide information about the type of subnets, e.g. `cpco.io/subnet/type=private` or `cpco.io/subnet/type=public`"
